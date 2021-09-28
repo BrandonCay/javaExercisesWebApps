@@ -1,0 +1,357 @@
+mport 
+      
+    java 
+    . 
+    util 
+    . 
+    Scanner 
+    ; 
+   
+ 
+   
+ 
+   
+ 
+   
+ 
+    class 
+      
+    Exercise1Part1 
+     { 
+   
+ 
+   
+ 
+         
+    public 
+      
+    static 
+      
+    void 
+      
+    main 
+    ( 
+    String 
+      
+    args 
+    []){ 
+   
+ 
+   
+ 
+             
+   
+ 
+   
+ 
+             
+    String 
+      
+    firstName 
+    = 
+    "Peter" 
+    ,  
+    lastName 
+    = 
+    "Mark" 
+    ;  
+   
+ 
+   
+ 
+             
+    int 
+      
+    ID 
+    ,  
+    hours 
+    = 
+    35 
+    ; 
+   
+ 
+   
+ 
+             
+    double 
+      
+    payRate 
+    = 
+    10.00 
+    ,  
+    grossPay 
+    = 
+    350.00 
+    ,  
+    taxDeduction 
+    = 
+    70.00 
+    , 
+    netPay 
+    = 
+    280.00 
+    ; 
+   
+ 
+   
+ 
+                     
+    //default values for testing 
+   
+ 
+   
+ 
+             
+    Scanner 
+      
+    sc 
+     =  
+    new 
+      
+    Scanner 
+    ( 
+    System 
+    . 
+    in 
+    ); 
+   
+ 
+   
+ 
+             
+   
+ 
+   
+ 
+             
+    firstName 
+    =  
+    sc 
+    . 
+    nextLine 
+    (); 
+   
+ 
+   
+ 
+             
+    lastName 
+     =  
+    sc 
+    . 
+    nextLine 
+    (); 
+   
+ 
+   
+ 
+             
+    ID 
+     =  
+    sc 
+    . 
+    nextInt 
+    (); 
+   
+ 
+   
+ 
+             
+    payRate 
+     =  
+    sc 
+    . 
+    nextDouble 
+    (); 
+   
+ 
+   
+ 
+             
+    hours 
+     =  
+    sc 
+    . 
+    nextInt 
+    (); 
+   
+ 
+   
+ 
+             
+    grossPay 
+    = 
+    hours 
+    * 
+    payRate 
+    ; 
+   
+ 
+   
+ 
+             
+    taxDeduction 
+    = 
+    grossPay 
+     *  
+    .20 
+    ; 
+   
+ 
+   
+ 
+             
+    netPay 
+     =  
+    grossPay 
+     -  
+    taxDeduction 
+    ; 
+   
+ 
+   
+ 
+             
+   
+ 
+   
+ 
+             
+    System 
+    . 
+    out 
+    . 
+    println 
+    ( 
+    String 
+    . 
+    format 
+    ( 
+    "%-45s%s, %s" 
+    , 
+    "Name:" 
+    ,  
+    lastName 
+    ,  
+    firstName 
+    )); 
+   
+ 
+   
+ 
+             
+    System 
+    . 
+    out 
+    . 
+    println 
+    ( 
+    String 
+    . 
+    format 
+    ( 
+    "%-45s%d" 
+    ,  
+    "Hours:" 
+    , 
+    hours 
+    )); 
+   
+ 
+   
+ 
+             
+    System 
+    . 
+    out 
+    . 
+    println 
+    ( 
+    String 
+    . 
+    format 
+    ( 
+    "%-45s$%.2f" 
+    ,  
+    "Pay Rate:" 
+    , 
+    payRate 
+    )); 
+   
+ 
+   
+ 
+             
+    System 
+    . 
+    out 
+    . 
+    println 
+    ( 
+    String 
+    . 
+    format 
+    ( 
+    "%-45s$%.2f" 
+    ,  
+    "Gross Pay:" 
+    , 
+    grossPay 
+    )); 
+   
+ 
+   
+ 
+             
+    System 
+    . 
+    out 
+    . 
+    println 
+    ( 
+    String 
+    . 
+    format 
+    ( 
+    "%-39s$%.2f" 
+    ,  
+    "Tax Deduction:" 
+    , 
+    taxDeduction 
+    )); 
+   
+ 
+   
+ 
+             
+    System 
+    . 
+    out 
+    . 
+    println 
+    ( 
+    String 
+    . 
+    format 
+    ( 
+    "%-45s$%.2f" 
+    ,  
+    "Net Pay:" 
+    , 
+    netPay 
+    )); 
+   
+ 
+   
+ 
+   
+ 
+        } 
+   
+ 
+   
+ 
+   
+ 
+    } 
+   
