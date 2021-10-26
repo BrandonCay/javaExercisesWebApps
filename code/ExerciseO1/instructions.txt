@@ -1,0 +1,39 @@
+The class Demo is defined as follows:
+class  Demo
+{
+          private  int val1;                                                    // the first data member
+          private         int val2;                                                      // the second data member
+ 
+          public void  setValues(int num1, int num2)
+          {
+                   val1 = num1;
+                   val2 = num2;
+          }
+          public int getValue1( )
+          {
+                return (val1);
+          }
+          public int getValue2( )
+          {
+                return (val2);
+          }
+          public int  getAverage( )
+          {
+             return(  (valu1 + valu2) / 2);
+          }
+}
+Define the class ExerciseO1 with the following methods:
+Static method addDemo ( ) that receives as arguments two objects of the class Demo and then builds and returns another object of the class Demo such that the value of each of its member variables is the sum of the values of the corresponding member variables of its arguments.
+
+Static method incrDemo2 that receives as argument an object of the class Demo and increments the value of each of its member variables by 5.
+
+method main does the following:
+Declare object item of the class Demo.
+Read the values for the instance variables of object item, and set their values.
+Compute the average of the values of the instance variables of object item and print it.
+Declare object obj1 and set its instance variables to 5 and 7 respectively.
+Declare object obj2 and set its instance variables to 14 and 9 respectively.
+
+Create a third object named objR such that the value of each of its instance variables is the sum of the values of the corresponding instance variables of objects obj1 and obj2 by calling addDemo ( ).
+Increment the value of each instance variable of object obj1 by 5 by calling incrDemo().
+Print the values of the instance variables of the objects objR and obj1.
