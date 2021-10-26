@@ -1,0 +1,7 @@
+Add to the class Demo of Exercise O1 the static method void decrDemo( Demo obj) that subtracts 1 
+from the value of each of the instance variables of the object that it receives as argument.
+
+Write the definition of the class ExerciseO2 with the method main that does the following:
+Declare object obj1 and set its instance variables to 5 and 7 respectively.
+Decrement the value of each instance variable of object obj1 by 1 by calling decrDemo(  ).
+Print the value of each of the instance variables of object obj1.
