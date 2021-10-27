@@ -31,7 +31,7 @@ Output the first name, last name, course name, the test scores, and the average 
 Read the number of test scores and use it to define an object of the class Score2 that is instantiated with the constructor with an integer value parameter.
 */
     int sz = 6;
-    Score2 sO2 = new Score2(6);
+    Score2 sO2 = new Score2(sz);
 
 /*Read values into the instance variables of this object.
 */

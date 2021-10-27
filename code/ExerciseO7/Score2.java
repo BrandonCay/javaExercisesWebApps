@@ -18,7 +18,7 @@ the null string and set the number of test scores to 5, allocates memory locatio
         lastName = null;
         courseName = null;
         sz = 5;
-
+        testScores = new double [sz];
         for(int i = 0 ; i< sz ; ++i){
             testScores[i] = 0.0;
         }
@@ -34,7 +34,7 @@ Score2(int numElt){
     lastName = null;
     courseName = null;
     sz = numElt;
-
+    testScores = new double [sz];
     for(int i = 0 ; i< sz ; ++i){
         testScores[i] = 0.0;
     }
@@ -51,6 +51,7 @@ Score2( String fname, String lname, String courseNum, double[ ] list){
     lastName = lname;
     courseName = courseNum;
     sz = list.length;
+    testScores = new double [sz];
 
     for(int i = 0 ; i< sz ; ++i){
         testScores[i] = list[i];
