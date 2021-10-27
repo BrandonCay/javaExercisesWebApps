@@ -3,34 +3,17 @@ import java.util.Scanner;
 public class ExerciseO2{
     
     public static void main(String args[]){
-        Scanner sc = new Scanner(System.in);
-        Demo item = new Demo();
-        
-        int val1 = sc.nextInt();
-        int val2 = sc.nextInt();
-        
-        item.setValues(val1, val2);
-        int ave = item.getAverage();
-
-        System.out.println(ave);
-        
         Demo obj1 = new Demo();
-        Demo obj2 = new Demo();
-
+        decrDemo(obj1);
         obj1.setValues(5, 7);
-        obj2.setValues(14, 9);
-
-        Demo objR = new Demo();
-        
-        objR = addDemo(obj1, obj2);
-
-        incrDemo2(obj1);
-
-        System.out.println(obj1.getValue1() + " " + obj1.getValue2());
-        System.out.println(obj2.getValue1() + " " + obj2.getValue2()); 
-
+        System.out.print(obj1.getValue1() + " " + obj1.getValue2());
     }
 
+
+
+    public static void decrDemo( Demo obj) {
+        obj.setValues(obj.getValue1() - 1, obj.getValue2() - 1);
+    }
     static Demo addDemo(Demo obj1, Demo obj2){
         int sumOfVal1 = obj1.getValue1() + obj2.getValue2(); 
         int sumOfVal2 = obj1.getValue2() + obj2.getValue2();

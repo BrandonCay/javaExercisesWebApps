@@ -1,7 +1,9 @@
+package mypackage.subpackage;
 
 /*----------------------------------Program2 --------------------------------------------*/
 /* Read two integer values, compute their product */
 import java.util.Scanner;
+
 
 public class Program2 {
     public static void main(String[] args) {
