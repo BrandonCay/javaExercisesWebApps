@@ -1,7 +1,39 @@
-Add to the class Demo of Exercise O1 the static method void decrDemo( Demo obj) that subtracts 1 
-from the value of each of the instance variables of the object that it receives as argument.
+Define a class named Date with three private instance variables named month (integer), day (integer), and year (integer) as follows:
+This class has a private instance method void checkDate(   ) that validates a date as follows:
 
-Write the definition of the class ExerciseO2 with the method main that does the following:
-Declare object obj1 and set its instance variables to 5 and 7 respectively.
-Decrement the value of each instance variable of object obj1 by 1 by calling decrDemo(  ).
-Print the value of each of the instance variables of object obj1.
+The month must be an integer value from 1 to 12.
+The day must be a valid integer value for a given month.
+The year must be an integer value from 1960 to 2019.
+
+Instance method checkDate( ) calls the System.exit( ) method to terminate the execution of the program 
+if any of the above conditions is not satisfied.
+
+This class default constructor sets the month instance variable to 1, the day instance 
+variable to 1, and the year instance variable to 1960:  The default date is 1/1/1960.
+
+The class constructor with parameters calls function checkDate( ) to check the date after 
+it has set the values for the instance variables month, day, and year.
+
+
+The class also has the following public instance methods:
+
+void inputDate(Scanner scan ) that uses the Scanner object parameter to read the
+ values for the instance variables, day, month, and year, and then calls function checkDate( ) to check the date.
+ 
+String getStringDate(  ) that returns the date as a string in the format:  month/day/year.
+
+boolean isEqualTo( Date obj ) that  returns true if the value of each instance variable month, day, and year of the current object is equal to the value of the corresponding instance variable of the object obj. Otherwise, it returns false.
+
+int getMonth(  ), int getDay(  ), and int getYear(  ). 
+These instance methods return the value of the month instance variable, the value of the day instance
+ variable, and the value of the year instance variable respectively.
+
+The class also has the public static (class) method boolean isGreaterThan(Date obj1, Date obj2 ) that returns true if obj1.year > obj2.year, and if they are equal, if obj1.month > obj2.month, and if they are equal, if obj1.day > obj2.day.  Otherwise, it returns false.
+Define a class named ExerciseO3 with the method main that does the following:
+It first defines an object with the default date and then outputs this date as a string.
+It defines an object named today and initializes it with today’s date.
+It outputs the message “Today’s day is:\t” followed by today’s date as a string.
+It defines an object named dueDate and then reads values for its instance variables.
+It uses the instance method isEqualTo( ) to compare the object today and dueDay and if they are equal, it outputs the message “Your project is on time”; otherwise, it uses the method isGreaterThan(  ) to compare these objects again and then output either the message “Your project is late” or “Your project is early” as appropriate.
+It finally reads or sets an object with an invalid date (for example, 25, 4, 2000).
+
