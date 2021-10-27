@@ -49,6 +49,10 @@ and then output its personal and pay information
     obj3.readPInfo(scan);
     obj3.readPayInfo(scan);
 
+    System.out.println(obj3.getPInfoString());
+    System.out.println(obj3.getPayInfoString());
+
+
 /*
 Define an object and instantiate it (or read the values for its instance variables) 
 with an invalid date (date of birth or date of hire).

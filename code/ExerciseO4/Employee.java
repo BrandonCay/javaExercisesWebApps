@@ -15,6 +15,7 @@ The default constructor initializes the first name to "john", the last name to "
         firstName = "john";
         lastName = "Doe";
         birthDay = new Date();
+        dateHired = new Date();
     }
 //NOTE GIVEN but necessary for initialize problem
     Employee(String fname, String lname, int ID, Date bday, Date dHired, double bPay)
@@ -23,7 +24,7 @@ The default constructor initializes the first name to "john", the last name to "
         lastName = lname;
         birthDay = bday;
         IDnumber = ID;
-        bday = dHired;
+        dateHired = dHired;
         basePay = bPay;
     }
 
@@ -38,7 +39,9 @@ instance variables first name, last name, ID number, birth day, and date of hire
         firstName = scan.next();
         lastName = scan.next();
         IDnumber = scan.nextInt();
+        birthDay = new Date();
         birthDay.inputDate(scan);
+        dateHired = new Date();
         dateHired.inputDate(scan);
     }
 /*
@@ -58,9 +61,10 @@ DATE HIRED: < string-date-hired >
 */
 
     public String getPInfoString(){
+        String bdate = birthDay.getStringDate(), hdate = dateHired.getStringDate();
         String format = String.format(
             "\tNAME: %s , %s\n\tID NUMBER: %d\n\tBIRTH DAY: %s\nDATE HIRED: %s",
-            lastName, firstName, IDnumber, birthDay, dateHired
+            lastName, firstName, IDnumber, bdate , hdate 
         );
 
         return format;
