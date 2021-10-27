@@ -1,67 +1,33 @@
 import java.util.Scanner;
 
 /*
-Define another class named ExerciseO4 that contains the method main that does the following:
+Exercise O5
 
+Define the class named ExerciseO5 with the method main that defines\
+ an array of 5 objects of the class Employee that you defined in Exercise O4 and then does the following:
+
+Read the personal and pay information of each object in the array 
+(by calling the methods readPInfo(Scanner scan ) and readPayInfo(Scanner scan ))
+
+Output the personal and pay information of each object in 
+the array (by calling the instance methods getPInfoString( ) and getPayInfoString( ))
 */
 
 public class ExerciseO5{
     
     public static void main(String args[]){
+        int SIZE = 10;
 
-        /*
-Define an object and instantiate it with the default constructor,
- then output its personal information (by calling the instance methods getPInfoString( ).
-
-        */
-        Employee obj1 = new Employee();
+        Employee [] arr = new Employee[SIZE];
         
-        System.out.println(obj1.getPInfoString());
-        
+        Scanner scan = new Scanner(System.in);
+        for (int i = 0; i< SIZE ; ++i ){
+            arr[i].readPInfo(scan);
+            arr[i].readPayInfo(scan);
 
-        /*
-Define an object and initialize its instance variables as follows:
-John   Doe   111111   10/25/1990   11/15/2010  750.00*/
-    Date bday1= new Date(25, 10, 1990);
-    Date dHired1 = new Date(25, 10, 1990);
-
-    Employee obj2 = new Employee("John",   "Doe",   111111, bday1, dHired1,   750.00d);
-
-    Scanner scan = new Scanner(System.in);
-        /*
-And then output its personal and pay information (by calling the instance methods getPInfoString( ) 
-and getPayInfoString( )).
-
-*/
-    
-    System.out.println(obj2.getPInfoString());
-    System.out.println(obj2.getPayInfoString());
-
-
-/*
-Define an object, read its personal and pay information (by calling the methods readPInfo(Scanner scan ) 
-and readPayInfo(Scanner scan )) , 
-and then output its personal and pay information
- (by calling the instance methods getPInfoString( ) and getPayInfoString( ))
- */
-    
-    Employee obj3 = new Employee();
-    obj3.readPInfo(scan);
-    obj3.readPayInfo(scan);
-
-    System.out.println(obj3.getPInfoString());
-    System.out.println(obj3.getPayInfoString());
-
-
-/*
-Define an object and instantiate it (or read the values for its instance variables) 
-with an invalid date (date of birth or date of hire).
-*/
-
-    Date failDate = new Date(0,0,0);//fail here
-    Employee obj4 = new Employee("b", "c", 111111, failDate, failDate, 750.00);
-    System.out.println("Program termiantes successfully:\n" +     obj4.getPInfoString());//doesn't print out if invalid date
-
+            System.out.print(arr[i].getPInfoString());
+            System.out.print(arr[i].getPayInfoString());
+        }
     }
 
 }
