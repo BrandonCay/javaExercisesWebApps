@@ -1,4 +1,23 @@
-Exercise O5
-Define the class named ExerciseO5 with the method main that defines an array of 5 objects of the class Employee that you defined in Exercise O4 and then does the following:
-Read the personal and pay information of each object in the array (by calling the methods readPInfo(Scanner scan ) and readPayInfo(Scanner scan ))
-Output the personal and pay information of each object in the array (by calling the instance methods getPInfoString( ) and getPayInfoString( ))
+Write the definition of the class named Score1 with the following private instance variables:
+  first name and last name (objects of the class String); course name (object of class String); 
+  and an array of 5 test scores (double). 
+
+The default constructor (constructor without parameters) initializes the String instance 
+variables to null and the elements of the array to 0.0. 
+
+The constructor with parameters Score1( String fname, String lname, String courseNum, double[ ] list) 
+initializes the array of test scores with the values of the elements of another array of 5 elements 
+that is passed to it as an argument.   
+
+In addition to the constructors, it has the following public instance methods:  
+double computeAverage(  ) that computes the average score,  
+void read(Scanner scan ) that uses the Scanner object parameter to read the first name, last name, course name,
+ and the 5 test scores into the array, and
+void print( ) that outputs the first name, last name, course name, the test scores, and the average test score. 
+
+Write the definition of the class ExerciseO6 with the main method that does the following:
+Define an object of the class Score1 and initialize it with the default constructor.
+Use the read method to read values into the instance variables of this object.
+Use the print method to output the first name, last name, course name, the test scores, and the average test score of this object.
+Read the last name, first name, course name, and the 5 test scores into an array and use this information to define and instantiate an object of the class Score1. 
+Use the print method to output the last name, first name, course name, the test scores, and the average test score of this object.
