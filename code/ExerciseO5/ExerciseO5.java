@@ -21,13 +21,16 @@ public class ExerciseO5{
         Employee [] arr = new Employee[SIZE];
         
         Scanner scan = new Scanner(System.in);
-        for (int i = 0; i< SIZE ; ++i ){
+
+        for (int i = 0; i< SIZE ; i++ ){
+            arr[i] = new Employee();
             arr[i].readPInfo(scan);
             arr[i].readPayInfo(scan);
 
-            System.out.print(arr[i].getPInfoString());
-            System.out.print(arr[i].getPayInfoString());
+            System.out.println(arr[i].getPInfoString());
+            System.out.println(arr[i].getPayInfoString());
         }
+
     }
 
 }
