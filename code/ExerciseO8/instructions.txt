@@ -1,20 +1,54 @@
-Write the definition of the class named Score2 with the following private instance variables:  first name and last name (objects of the class String); course name (object of class String); the number of test scores (integer); and an array variable to hold the test scores (double). 
+Exercise O4
+Using the class Date that you defined in Exercise O3, write the definition of the class named Employee with the following private instance variables:
+first name                  -        class string
+last name          -        class string 
+ID number                 -        integer  (the default ID number is 999999)
+birth day          -        class Date 
+date hired                  -        class Date
+base pay          -        double precision  (the default base pay is  $0.00)
 
-The default constructor (constructor without parameters) initializes the String instance variables to the null string and set the number of test scores to 5, allocates memory locations for 5 array elements and initializes them to 0.0.
-The constructor Score2(int numElt) initializes the String instance variables to the null string, sets the number of test scores to numElt, allocates memory locations for numElt array elements and initializes them to 0.0.  
-The constructor with parameters Score2( String fname, String lname, String courseNum, double[ ] list)  initializes the array of test scores with the parameter array, and sets the number of test scores to its size. 
-In addition to the constructors, it has the following public instance methods: 
+The default constructor initializes the first name to "john", the last name to "Doe", and the
+ birth day and hired day to the default date (1/1/1960).
 
-double computeAverage(  ) that computes the average score, 
-void read(Scanner scan ) that uses the Scanner object parameter to read the first name, last name, course name, and the test scores into the array, and
-void print( ) that outputs the first name, last name, course name, the test scores, and the average test score. 
-Write the definition of the class ExerciseO7 with the main method that does the following:
+In addition to the constructors, the class has the following public instance methods:
 
-Define an object of the class Score2 and instantiate it with the default constructor.
-Read values into the instance variables of this object.
-Output the first name, last name, course name, the test scores, and the average test score of this object.
-Read the number of test scores and use it to define an object of the class Score2 that is instantiated with the constructor with an integer value parameter.
-Read values into the instance variables of this object.
-Output the first name, last name, course name, the test scores, and the average test score of this object.
-Read the last name, first name, course name, and 10 test scores into an array and use this information to define and instantiate an object of the class Score2. 
-Output the last name, first name, course name, the test scores, and the average test score of this object.
+void readPInfo(Scanner scan ) that uses the Scanner object parameter to read the values for the 
+instance variables first name, last name, ID number, birth day, and date of hire.
+
+void readPayInfo(Scanner scan ) that uses the Scanner object parameter to read the value
+ for the base pay instance variable. 
+ 
+String getPInfoString( ) that returns a string in the following format:
+              NAME: <lastName  +  ", "  +   firstName>
+              ID NUMBER:  <Id-Number>
+               BIRTH DAY: <string-birth-day>
+DATE HIRED: < string-date-hired >
+
+void  setBpay( double newBpay )  that sets the value of the base pay to the new value, newBpay.
+
+ double getBpay(  )  that returns the value of the base pay instance variable.
+ 
+double getGpay(  )  that returns the value of the gross pay (which is the base pay).
+
+double computeTax(   )  that computes the tax deduction on the gross pay and returns it as follows:
+If gross pay is greater than or equal to 1000, 20% of the gross pay;
+If  800 <= gross pay <  1000, 18% of gross pay
+If  600 <= gross pay < 800, 15% of gross pay
+Otherwise, 10 % of the gross pay.
+ 
+String getPayInfoString( ) that returns a string in the following format:
+              GROSS PAY: <gross-pay>
+              TAX DEDUCTION:  <tax-deduction>
+               NET PAY: <Net-pay>
+
+Define another class named ExerciseO4 that contains the method main that does the following:
+Define an object and instantiate it with the default constructor, then output its personal information (by calling the instance methods getPInfoString( ).
+Define an object and initialize its instance variables as follows:
+John   Doe   111111   10/25/1990   11/15/2010  750.00
+
+And then output its personal and pay information (by calling the instance methods getPInfoString( ) 
+and getPayInfoString( )).
+
+Define an object, read its personal and pay information 
+(by calling the methods readPInfo(Scanner scan ) and readPayInfo(Scanner scan )) , and then output its personal and pay information (by calling the instance methods getPInfoString( ) and getPayInfoString( )).
+Define an object and instantiate it (or read the values for its instance variables) with an invalid date (date of birth or date of hire).
