@@ -28,7 +28,10 @@ int getMonth(  ), int getDay(  ), and int getYear(  ).
 These instance methods return the value of the month instance variable, the value of the day instance
  variable, and the value of the year instance variable respectively.
 
-The class also has the public static (class) method boolean isGreaterThan(Date obj1, Date obj2 ) that returns true if obj1.year > obj2.year, and if they are equal, if obj1.month > obj2.month, and if they are equal, if obj1.day > obj2.day.  Otherwise, it returns false.
+The class also has the public static (class) method boolean isGreaterThan(Date obj1, Date obj2 ) 
+that returns true if obj1.year > obj2.year, and if they are equal, if obj1.month > obj2.month, 
+and if they are equal, if obj1.day > obj2.day.  Otherwise, it returns false.
+
 Define a class named ExerciseO3 with the method main that does the following:
 It first defines an object with the default date and then outputs this date as a string.
 It defines an object named today and initializes it with today’s date.
