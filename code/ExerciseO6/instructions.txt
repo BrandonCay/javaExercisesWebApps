@@ -10,6 +10,7 @@ initializes the array of test scores with the values of the elements of another 
 that is passed to it as an argument.   
 
 In addition to the constructors, it has the following public instance methods:  
+
 double computeAverage(  ) that computes the average score,  
 void read(Scanner scan ) that uses the Scanner object parameter to read the first name, last name, course name,
  and the 5 test scores into the array, and
