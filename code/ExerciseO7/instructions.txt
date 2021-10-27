@@ -1,0 +1,20 @@
+Write the definition of the class named Score2 with the following private instance variables:  first name and last name (objects of the class String); course name (object of class String); the number of test scores (integer); and an array variable to hold the test scores (double). 
+
+The default constructor (constructor without parameters) initializes the String instance variables to the null string and set the number of test scores to 5, allocates memory locations for 5 array elements and initializes them to 0.0.
+The constructor Score2(int numElt) initializes the String instance variables to the null string, sets the number of test scores to numElt, allocates memory locations for numElt array elements and initializes them to 0.0.  
+The constructor with parameters Score2( String fname, String lname, String courseNum, double[ ] list)  initializes the array of test scores with the parameter array, and sets the number of test scores to its size. 
+In addition to the constructors, it has the following public instance methods: 
+
+double computeAverage(  ) that computes the average score, 
+void read(Scanner scan ) that uses the Scanner object parameter to read the first name, last name, course name, and the test scores into the array, and
+void print( ) that outputs the first name, last name, course name, the test scores, and the average test score. 
+Write the definition of the class ExerciseO7 with the main method that does the following:
+
+Define an object of the class Score2 and instantiate it with the default constructor.
+Read values into the instance variables of this object.
+Output the first name, last name, course name, the test scores, and the average test score of this object.
+Read the number of test scores and use it to define an object of the class Score2 that is instantiated with the constructor with an integer value parameter.
+Read values into the instance variables of this object.
+Output the first name, last name, course name, the test scores, and the average test score of this object.
+Read the last name, first name, course name, and 10 test scores into an array and use this information to define and instantiate an object of the class Score2. 
+Output the last name, first name, course name, the test scores, and the average test score of this object.
