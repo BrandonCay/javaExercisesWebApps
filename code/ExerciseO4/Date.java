@@ -1,49 +1,5 @@
 import java.util.Scanner;
 
-public class ExerciseO3{
-    
-    public static void main(String args[]){
-        Scanner scan = new Scanner(System.in);
-        Date obj = new Date();
-        
-        obj.inputDate(scan);//todays date is invalid
-        System.out.println("Today's the day " + obj.getStringDate());
-    
-        Date dueDate = new Date();
-
-        dueDate.inputDate(scan);
-
-
-        String message;
-
-        if(obj.isEqualTo(dueDate))
-            message = "Your project is on time";
-        else if(Date.isGreaterThan(obj, dueDate)){
-            message="Your project is late";
-        }else
-            message="Your project is early";
-
-        System.out.print(message);
-
-
-        Date invalid = new Date();
-        invalid.inputDate(scan);
-        System.out.println("Program successfully finished"); //doesn't print when invalid date is inputted
-        
-        
-    }
-
-}
-
-class Employee{
-    String firstName, lastName; 
-    int IDnumber; 
-    Date birthDay, hired;
-    double basePay;  
-
-    
-}
-
 class Date{
     int month, day, year;
 
@@ -51,6 +7,12 @@ class Date{
         day = 1;
         month = 1;
         year = 1960;
+    }
+//NOT GIVEN, but makes life easier for problems that don't specify "read" or "set"
+   public Date(int day, int month, int year){
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
 
     /*
@@ -91,11 +53,6 @@ class Date{
         return year;
     }
 
-    /*
-The class also has the public static (class) method boolean isGreaterThan(Date obj1, Date obj2 ) 
-that returns true if obj1.year > obj2.year, and if they are equal, if obj1.month > obj2.month, 
-and if they are equal, if obj1.day > obj2.day.  Otherwise, it returns false.
-    */
 
     public static Boolean isGreaterThan(Date obj1, Date obj2){
         Boolean res=false;
@@ -151,6 +108,5 @@ and if they are equal, if obj1.day > obj2.day.  Otherwise, it returns false.
     private Boolean isLeapYear(int year){
         return ((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0);//leap year formula
     }
+
 }
-
-

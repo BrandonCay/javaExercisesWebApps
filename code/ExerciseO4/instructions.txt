@@ -11,16 +11,23 @@ The default constructor initializes the first name to "john", the last name to "
  birth day and hired day to the default date (1/1/1960).
 
 In addition to the constructors, the class has the following public instance methods:
-void readPInfo(Scanner scan ) that uses the Scanner object parameter to read the values for the instance variables first name, last name, ID number, birth day, and date of hire.
+
+void readPInfo(Scanner scan ) that uses the Scanner object parameter to read the values for the 
+instance variables first name, last name, ID number, birth day, and date of hire.
+
 void readPayInfo(Scanner scan ) that uses the Scanner object parameter to read the value for the base pay instance variable. 
 String getPInfoString( ) that returns a string in the following format:
               NAME: <lastName  +  ", "  +   firstName>
               ID NUMBER:  <Id-Number>
                BIRTH DAY: <string-birth-day>
 DATE HIRED: < string-date-hired >
+
 void  setBpay( double newBpay )  that sets the value of the base pay to the new value, newBpay.
+
  double getBpay(  )  that returns the value of the base pay instance variable.
+ 
 double getGpay(  )  that returns the value of the gross pay (which is the base pay).
+
 double computeTax(   )  that computes the tax deduction on the gross pay and returns it as follows:
 If gross pay is greater than or equal to 1000, 20% of the gross pay;
 If  800 <= gross pay <  1000, 18% of gross pay
@@ -31,6 +38,7 @@ String getPayInfoString( ) that returns a string in the following format:
               GROSS PAY: <gross-pay>
               TAX DEDUCTION:  <tax-deduction>
                NET PAY: <Net-pay>
+               
 Define another class named ExerciseO4 that contains the method main that does the following:
 Define an object and instantiate it with the default constructor, then output its personal information (by calling the instance methods getPInfoString( ).
 Define an object and initialize its instance variables as follows:
