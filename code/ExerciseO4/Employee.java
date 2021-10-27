@@ -34,14 +34,20 @@ void readPInfo(Scanner scan ) that uses the Scanner object parameter to read the
 instance variables first name, last name, ID number, birth day, and date of hire.
 */
 
-    void readPInfo(Scanner scan){
+    public void readPInfo(Scanner scan){
         firstName = scan.next();
         lastName = scan.next();
         IDnumber = scan.nextInt();
         birthDay.inputDate(scan);
         dateHired.inputDate(scan);
     }
-
+/*
+void readPayInfo(Scanner scan ) that uses the Scanner object parameter to read the value
+ for the base pay instance variable. 
+ */
+    public void readPayInfo(Scanner scan){
+        basePay = scan.nextDouble();
+    }
 
 /* 
 String getPInfoString( ) that returns a string in the following format:
@@ -51,7 +57,7 @@ String getPInfoString( ) that returns a string in the following format:
 DATE HIRED: < string-date-hired >
 */
 
-    String getPInfoString(){
+    public String getPInfoString(){
         String format = String.format(
             "\tNAME: %s , %s\n\tID NUMBER: %d\n\tBIRTH DAY: %s\nDATE HIRED: %s",
             lastName, firstName, IDnumber, birthDay, dateHired
@@ -113,7 +119,7 @@ String getPayInfoString( ) that returns a string in the following format:
                NET PAY: <Net-pay>
 
 */
-    String getPayInfoString(){
+    public String getPayInfoString(){
         double gPay = getGpay(), taxDeduction = computeTax(), netPay = gPay - gPay * taxDeduction;
         String format = String.format(
             "GROSS PAY: %f\nTAXDEDUCTION: %f\nNET PAY: %f",

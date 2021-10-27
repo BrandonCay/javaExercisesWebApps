@@ -13,6 +13,8 @@ class Date{
         this.day = day;
         this.month = month;
         this.year = year;
+        checkDate(year, month, day);
+
     }
 
     /*
