@@ -1,54 +1,27 @@
-Exercise O4
-Using the class Date that you defined in Exercise O3, write the definition of the class named Employee with the following private instance variables:
-first name                  -        class string
-last name          -        class string 
-ID number                 -        integer  (the default ID number is 999999)
-birth day          -        class Date 
-date hired                  -        class Date
-base pay          -        double precision  (the default base pay is  $0.00)
+Exercise O8
 
-The default constructor initializes the first name to "john", the last name to "Doe", and the
- birth day and hired day to the default date (1/1/1960).
+Write the definition of the subclass of class Employee (that you defined in Exercise O4) named BonusEmployee as follows:
+It has one additional private instance variable named bonus (double precision) with the default value $0.0.
+In addition to the constructors, it has the following public instance methods:
+double getBonus( void )                 that returns the value of the instance variable bonus.
 
-In addition to the constructors, the class has the following public instance methods:
+Instance method void readPayInfo(Scanner scan ) is overridden in the class BonusEmploye:  it now reads the values for the instance variables base pay and bonus.
+Instance method double getGpay(   ) is overridden in the class BonusEmploye:  it now returns the sum of the value of the instance variable base pay and the value of the instance variable bonus.
+Instance method String getPayInfoString( ) is overridden in the class BonusEmploye:  it returns a string in the following format:
+BASE PAY:  <base-pay>
 
-void readPInfo(Scanner scan ) that uses the Scanner object parameter to read the values for the 
-instance variables first name, last name, ID number, birth day, and date of hire.
+BONUS:  <bonus>
 
-void readPayInfo(Scanner scan ) that uses the Scanner object parameter to read the value
- for the base pay instance variable. 
- 
-String getPInfoString( ) that returns a string in the following format:
-              NAME: <lastName  +  ", "  +   firstName>
-              ID NUMBER:  <Id-Number>
-               BIRTH DAY: <string-birth-day>
-DATE HIRED: < string-date-hired >
-
-void  setBpay( double newBpay )  that sets the value of the base pay to the new value, newBpay.
-
- double getBpay(  )  that returns the value of the base pay instance variable.
- 
-double getGpay(  )  that returns the value of the gross pay (which is the base pay).
-
-double computeTax(   )  that computes the tax deduction on the gross pay and returns it as follows:
-If gross pay is greater than or equal to 1000, 20% of the gross pay;
-If  800 <= gross pay <  1000, 18% of gross pay
-If  600 <= gross pay < 800, 15% of gross pay
-Otherwise, 10 % of the gross pay.
- 
-String getPayInfoString( ) that returns a string in the following format:
               GROSS PAY: <gross-pay>
+
               TAX DEDUCTION:  <tax-deduction>
+
                NET PAY: <Net-pay>
 
-Define another class named ExerciseO4 that contains the method main that does the following:
-Define an object and instantiate it with the default constructor, then output its personal information (by calling the instance methods getPInfoString( ).
-Define an object and initialize its instance variables as follows:
-John   Doe   111111   10/25/1990   11/15/2010  750.00
-
-And then output its personal and pay information (by calling the instance methods getPInfoString( ) 
-and getPayInfoString( )).
-
-Define an object, read its personal and pay information 
-(by calling the methods readPInfo(Scanner scan ) and readPayInfo(Scanner scan )) , and then output its personal and pay information (by calling the instance methods getPInfoString( ) and getPayInfoString( )).
-Define an object and instantiate it (or read the values for its instance variables) with an invalid date (date of birth or date of hire).
+Define the class Exercise O8 with the method main(  ) that is used to test your class as follows:
+Method main first defines an object of the class Employee with the default values for its instance variables, and then prints its personal and pay information.
+It defines an object of the class BonusEmployee with the default values for its instance variables, and then prints its personal and pay information.
+It initializes an object of the class Employee  as follows: first name: “John”;  last name: “Doe”; ID #: 111111; Date of birth: 10/ 25/1991; Date of hire: 5/10/2010; and base pay: $1250; and then prints its personal and pay information.
+It initializes an object of the class BonusEmployee as follows: first name: “Jobe”; last name: “Daly”; ID #: 222222; Date of birth: 1/ 5/1990; Date of hire: 6/30/2011; base pay: $850; and bonus: $250; then prints its personal and pay information.
+It reads the personal and pay information of an object of the class Employee, and then outputs its personal and pay information.
+It then reads the personal and pay information of an object of the class BonusEmployee and then outputs its personal and pay information.
