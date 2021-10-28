@@ -1,18 +1,6 @@
-1/1/1960
-	NAME: Doe , john
-	ID NUMBER: 999999
-	BIRTH DAY: 1/1/1960
-DATE HIRED: 1/1/1960
-GROSS PAY: 0.000000
-TAXDEDUCTION: 0.100000
-NET PAY: 0.000000
-	NAME: Doe , john
-	ID NUMBER: 999999
-	BIRTH DAY: 1/1/1960
-DATE HIRED: 1/1/1960
-BASEPAY: 0.000000
- BONUS:0.000000 
-GROSS PAY: 0.000000
-TAXDEDUCTION: 0.100000
-NET PAY: 0.000000
-
+The length is:	3.0
+The width is:	5.0
+The price of the tile is:	60.0
+The height is:	2.0
+The base is:	6.0
+The price of the tile is:	48.0
