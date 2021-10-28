@@ -1,0 +1,116 @@
+Exercise O16        
+
+Using the following definition of the abstract class ChangeMaker:
+abstract class ChangeMaker
+
+            {
+
+                        private int  val1;
+
+private int  val2;
+
+public  ChangeMaker(  )
+
+{
+
+            val1  =  0;
+
+            val2 = 0;
+
+}
+
+public  ChangeMaker(int n1, int n2 )
+
+{
+
+            val1  =  n1;
+
+            val2 = n2;
+
+}
+
+public int getVal1(   )
+
+{
+
+            return val1;
+
+}
+
+public int getVal2(   )
+
+{
+
+            return val2;
+
+}
+
+public void  setValues( int num1,  int  num2)
+
+{
+
+            val1  =  num1;
+
+            val2  =   num2;
+
+}
+
+public abstract void  makeChanges(   );            // abstract method
+
+                        @Override
+
+public String toString(   )
+
+{
+
+                                    String  s  =       "\nval1="  +  val1 + "\nval2 ="  + val2;
+
+                                     return( s );
+
+}
+
+            }
+
+          Define a class named Exercise O16A with the method main that doe the following:
+
+Define the object obj1 by using an anonymous class that extends the abstract class ChangeMaker as follows:
+This object is initialized with the default constructor.
+Method makeChanges is defined as follows:  It increments the value of each instance variable by 1.
+Call the method makeChanges( ) on this object and then print it.
+Define the object obj2 by using an anonymous class that extends the abstract class ChangeMaker as follows:
+This object is initialized with the value 3 for val1, and 4 for val2.
+Method makeChanges is defined as follows:  It increments the value of each instance variable by 5.
+Call the method makeChanges( ) on this object and then print it.
+ 
+
+Using the following definition of the interface Expression:
+            public  interface Expression
+
+            {
+
+                        void  saySomething(    );
+
+            }
+
+           Define a class named Exercise O16B with the method main that doe the following:
+
+Define and instantiate the object obj1 by using an anonymous class that implements the interface Expression with the following definition of the method saySomething:
+void  saySomething(   )
+
+{
+
+            System.out.println( "I feel good");
+
+}
+
+Call the mothod saySomething on this object.
+Define the object obj2 by using an anonymous class that implements the interface Expression with the following definition of the method saySomething:
+void  saySomething(   )
+
+{
+
+            System.out.println( "I do not feel well");
+
+}
+
+Call the mothod saySomething on this object.
