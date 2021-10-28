@@ -1,0 +1,34 @@
+Exercise O9
+
+Given the class Employee that you defined in Exercise O4 and class BonusEmployee that you defined in Exercise O8, we define the objects eemp, bemp1, and bemp2 as follows:
+
+Employee  eemp  = new Employee(   );
+
+Employee  bemp1  =  new  BonusEmployee(   );
+
+BonusEmployee  bemp2  =  new  BonusEmployee(   );
+
+Assuming that the input values are typed as followed:      1000     600    500   2000   400   900
+Show the output of the following sequence of statements:
+
+          Scanner scan  new Scanner( System.in );
+
+eemp.readPayInfo( scan  );
+
+bemp1.readPayInfo(  scan );
+
+bemp2.readPayInfo( scan  );
+
+System.out.println( “Gross Pay of eemp=\t” +   (eemp.getGpay(  ) );
+
+System.out.println( “Gross Pay of bemp1=\t” +   (bemp1.getGpay(  ) );
+
+System.out.println( “Gross Pay of bemp2=\t” +   (bemp2.getGpay(  ) );
+
+System.out.println( “Tax of eemp=\t” +   (eemp.computeTax(  ) );
+
+System.out.println( “Tax of bemp1=\t” +   (bemp1. computeTax (  ) );
+
+System.out.println( “Tax of bemp2=\t” +   (bemp2. computeTax (  ) );
+
+Is the statement   double  bonus  =  bemp1.getBonus(   );   legal?  Explain your answer.
