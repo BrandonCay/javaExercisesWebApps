@@ -41,6 +41,8 @@ It then reads the personal and pay information of an object of the class HourlyE
 */
 he3.readPInfo(scan);
 he3.readPayInfo(scan);
+System.out.println(he3.getPInfoString());
+System.out.println(he3.getPayInfoString());
 
     }
 }
