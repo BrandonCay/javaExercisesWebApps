@@ -13,7 +13,7 @@ public class HourlyEmployee extends Employee {
     private int hours;
     private double payRate, overtime;
 
-    HourlyEmployee() {
+    public HourlyEmployee() {
         hours = 0;
         payRate = 0;
         overtime = 0;
@@ -24,8 +24,7 @@ public class HourlyEmployee extends Employee {
      * double prate)
      */
 
-    HourlyEmployee( String fn, String ln, int iD, Date bd, Date hd, int hrs,
-    double prate){
+    public HourlyEmployee( String fn, String ln, int iD, Date bd, Date hd, int hrs, double prate){
         /*
         * Where hrs represents the number of hours of work and prate the pay rate.
         *
@@ -35,8 +34,10 @@ public class HourlyEmployee extends Employee {
         * pay and overtime.
         */
 
-        super();
-        computeBaseOvertimePay();
+        super(fn,  ln,  iD,  bd,  hd, 1f);//basePay Not given, overtime assigns
+        hours = hrs;
+        payRate = prate;
+         computeBaseOvertimePay();
    
     }
     
@@ -51,10 +52,9 @@ public class HourlyEmployee extends Employee {
          * If the value of the instance variable hours is less than or equal to 35, then
          * it does the following:
          */
-        double newBpay = 0f;
         if (hours <= 35) {
-            newBpay = payRate * hours;
-            setBpay(newBpay);
+
+            setBpay(payRate * hours);
             /*
              * Set the value of the inherited instance variable base pay to payRate times
              * hours.
@@ -62,15 +62,14 @@ public class HourlyEmployee extends Employee {
             overtime = 0;
             /*
              * Set the value of the instance variable overtime to 0.00. Otherwise, it does
-             * the following: }
-             */} else {
+             * the following: }*/
+        } else {
             /**
              * Set the value of the inherited instance variable base pay to payRate times
              * 35. Set the value of the instance variable overtime to payRate times 1.5
              * times (hours – 35).
              */
-            newBpay = payRate * 35;
-            setBpay(newBpay);
+            setBpay(payRate * 35);
             overtime = payRate * 1.5 * (hours - 35);
 
         }
@@ -144,7 +143,7 @@ public class HourlyEmployee extends Employee {
 
     @Override
     public String getPayInfoString( ){
-        String formattedStr = String.format("HOURS: %d\nBAY PAY:%f\n", hours, payRate);
+        String formattedStr = String.format("HOURS: %d\nPAY RATE:%f\n", hours, payRate);
         formattedStr += super.getPayInfoString();
         return formattedStr;
     }
