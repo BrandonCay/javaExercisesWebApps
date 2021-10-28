@@ -16,6 +16,14 @@ class Date{
         checkDate(year, month, day);
 
     }
+/*
+Override the toString method of the class Date that you defined in Exercise O3:  it returns the date as a string in the format:  month/day/year.
+
+*/
+@Override
+public String toString(){
+    return getStringDate();
+}
 
     /*
     values for the instance variables,

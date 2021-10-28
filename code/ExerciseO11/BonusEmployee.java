@@ -25,6 +25,31 @@ public class BonusEmployee extends Employee {
         super(fname,  lname,  ID,  bday,  dHired,  bPay);
         bonus = bns;
     }
+/*
+Override the toString method of the class BonusEmployee that you defined in Exercise O8:  it returns a string in the following format:
+NAME: <lastName  +  ", "  +   firstName>
+
+              ID NUMBER:  <Id-Number>
+
+               BIRTH DAY: <string-birth-day>
+
+DATE HIRED: < string-date-hired >
+
+BASE PAY:  <base-pay>
+
+BONUS:  <bonus>
+
+GROSS PAY:  <gross-pay>
+
+TAX DEDUCTION:  <tax-deduction>
+
+NET PAY:       <net-pay>
+
+*/
+
+public String toString(){
+    return getPInfoString() + "\n" + getPayInfoString();
+}
 
     public double getBonus( )    {
         return bonus;

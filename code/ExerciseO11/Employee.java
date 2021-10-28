@@ -28,7 +28,28 @@ The default constructor initializes the first name to "john", the last name to "
         basePay = bPay;
     }
 
+/*
+Override the toString method of the class Employee that you defined in Exercise O4 as follows:  it returns a string in the following format:
+NAME: <lastName  +  ", "  +   firstName>
 
+              ID NUMBER:  <Id-Number>
+
+               BIRTH DAY: <string-birth-day>
+
+DATE HIRED: < string-date-hired >
+
+GROSS PAY:  <gross-pay>
+
+TAX DEDUCTION:  <tax-deduction>
+
+NET PAY:       <net-pay>
+
+*/
+
+@Override
+public String toString(){
+    return getPInfoString() + "\n" + getPayInfoString();
+}
 
 /*
 void readPInfo(Scanner scan ) that uses the Scanner object parameter to read the values for the 
