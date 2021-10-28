@@ -1,0 +1,44 @@
+Exercise O13
+
+The payroll interface is defined as follows:
+
+public  interface Payroll
+
+{
+
+     double   TAXRATE  =  0.15;                        // tax rate
+
+double  getGrossPay(   );                    // to compute and return the gross pay
+
+double  getDeductions(   );                  // to compute and return the deductions
+
+void  printDetails(   );                                  // to output the payroll
+
+}
+
+Write the definition of the class HourlyPay that implements the interface Payroll as follows:
+It has two private instance variables hours (double) and payRate (double).
+The constructor without parameters initializes the instance variable hours to 40 and payRate to 10.00
+It has an additional private instance method  double getOverTime(  )  that does the following:  it returns     1.5 *(hours – 40) * payRate if the value of the instance method hours is greater than 40; and 0 otherwise.
+Instance method getGrossPay(   )  returns hours * payRate + overtime.
+Instance method getDeduction(  ) returns TAXRATE * gross pay.
+Override the toString method of this class as follows:  it uses the String.format(  )  static method to create and return the following string:
+PAY RATE:                   <pay rate>
+
+HOURS:                                  <hours>
+
+OVERTIME:                           <overtime>
+
+GROSS PAY:                          <gross-pay>
+
+TAX DEDUCTION:      <tax-deduction>
+
+NET PAY:                               <net-pay>
+
+Public instance method printDetails(  )  prints the payroll information above.
+Write the definition of the class Exercise O13 with the method main that does the following:
+Define an object and initializes it with the default constructor.
+Call the printDetails(  ) method to print its payroll information.
+Define an object and initializes it with the hours 50 and pay rate $12.
+Call the printDetails(  ) method to print its payroll information.
+
