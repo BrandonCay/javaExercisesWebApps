@@ -86,7 +86,7 @@ class Date{
 
     private Boolean isValidDay(int month , int day, int year){
         //does not account for leap uears 
-        int febMaxDay = 28;
+        int febMaxDay = 28, NumOfFinalDayOfEvenMonth = 30, NumOfFinalDayOfOddMonth = 31; //1 is true
         if(day < 1){
             return false;
         }
@@ -94,18 +94,21 @@ class Date{
         if(isLeapYear(year)){
             febMaxDay = 29;
         }
-
         if(month ==  2){
             return (day <= febMaxDay);
-        }else{
-            if(month % 2 == 0){
-                return (day <= 31);
-            }else{
-                return (day <= 30);
-            }
-
+        }else if(month >= 8){
+            NumOfFinalDayOfEvenMonth = 31;
+            NumOfFinalDayOfOddMonth = 30; // PERHAPS SOMETHING LIKE (num % 31) + 1
         }
+
+        if(month % 2 == 0){
+            return (day <= NumOfFinalDayOfEvenMonth);
+        }else{
+            return (day <= NumOfFinalDayOfOddMonth);
+        }
+
     }
+
 
     private Boolean isLeapYear(int year){
         return ((year % 4 == 0) && (year % 100!= 0)) || (year%400 == 0);//leap year formula
