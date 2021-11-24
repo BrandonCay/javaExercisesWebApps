@@ -1,0 +1,3 @@
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at ProgramE0.quotient(ProgramE0.java:28)
+	at ProgramE0.main(ProgramE0.java:22)

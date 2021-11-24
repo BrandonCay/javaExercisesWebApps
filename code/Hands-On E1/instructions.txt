@@ -1,0 +1,5 @@
+Type and execute the program in Example E0 as follows:
+With input values:   12 and 5.
+With input values:          7 and 0.
+With input values:          10 and ko.
+Highlight the exceptions generated on your printouts.
