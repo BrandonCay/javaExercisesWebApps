@@ -1,0 +1,6 @@
+
+Exception: java.lang.ArrayIndexOutOfBoundsException: 6
+
+Exception: java.util.InputMismatchException
+
+Exception: java.lang.ArithmeticException: / by zero

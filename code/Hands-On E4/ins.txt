@@ -1,0 +1,6 @@
+Hands-On E4
+Type and execute the program E3 as follows:
+With input 6 and 4
+With input z and 5
+With input 2 and 0
+With input 2 and 5
