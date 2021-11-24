@@ -1,0 +1,1 @@
+Type and execute the programs E1a and E1c with input values: 5 and 0 and then 5 and 3.
