@@ -1,3 +1,8 @@
-Exception in thread "main" java.lang.ArithmeticException: / by zero
-	at ProgramE0.quotient(ProgramE0.java:28)
-	at ProgramE0.main(ProgramE0.java:22)
+
+Exception: java.lang.ArithmeticException: / by zero
+Exception in thread "main" java.util.NoSuchElementException
+	at java.util.Scanner.throwFor(Unknown Source)
+	at java.util.Scanner.next(Unknown Source)
+	at java.util.Scanner.nextInt(Unknown Source)
+	at java.util.Scanner.nextInt(Unknown Source)
+	at ProgramE1a.main(ProgramE1a.java:15)
