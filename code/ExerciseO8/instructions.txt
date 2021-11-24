@@ -1,6 +1,7 @@
 Exercise O8
 
-Write the definition of the subclass of class Employee (that you defined in Exercise O4) named BonusEmployee as follows:
+Write the definition of the subclass of class Employee (that you defined in Exercise O4) named BonusEmployee 
+as follows:
 It has one additional private instance variable named bonus (double precision) with the default value $0.0.
 In addition to the constructors, it has the following public instance methods:
 double getBonus( void )                 that returns the value of the instance variable bonus.

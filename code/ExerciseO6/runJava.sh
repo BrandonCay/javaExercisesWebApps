@@ -1,4 +1,4 @@
-fileName=ExerciseO5
+fileName=ExerciseO6
 
 javac ${fileName}.java
 java ${fileName} <program.dat> program.out

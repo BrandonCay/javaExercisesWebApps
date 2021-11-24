@@ -98,7 +98,9 @@ class Date{
             return (day <= febMaxDay);
         }else if(month >= 8){
             NumOfFinalDayOfEvenMonth = 31;
-            NumOfFinalDayOfOddMonth = 30; // PERHAPS SOMETHING LIKE (num % 31) + 1
+            NumOfFinalDayOfOddMonth = 30; 
+            // PERHAPS SOMETHING LIKE ODD_DAY = ( ((even + 1) % 30) + 30 ) TO free space and improve writability 
+            //(don't have to change dfferent variables)
         }
 
         if(month % 2 == 0){

@@ -1,24 +1,22 @@
-read exName;
-mkdir "${exName}";
+read exName
+mkdir "${exName}"
 
 inputFileName=p
 stdoutFileName=${inputFileName}
 stderrFileName=err
-rfileName=run
 defaultJavaFileName=main
+runFileName=run
+export runfileName
 
+cd "${exName}"
 
-./setRunFile.sh
-${rfileName}
-
-echo ${runFileName}
-
-cd "${exName}";
-
-touch ${inputFileName}.dat ${stdoutFileName}.out ${stderrFileName}.out ${defaultJavaFileName}.java ${runFileName}.sh;
+touch ${inputFileName}.dat ${stdoutFileName}.out ${stderrFileName}.out ${defaultJavaFileName}.java ${runFileName}.sh \
+${runFileName}.sh rmBadChars.sh
 
 cd ..
 
-#copy files into 
-cat runJavaBP.sh > /${exName}/${runFileName}.sh
-cat rmBadChars.sh > /${exName}/rmBadChars.sh
+#copy files into
+cat runJavaBP.sh >${exName}/${runFileName}.sh
+cat rmBadCharsBP.sh >${exName}/rmBadChars.sh
+echo "" >${exName}/README.txt
+echo "Boilerplate fin"

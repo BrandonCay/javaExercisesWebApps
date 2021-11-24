@@ -1,2 +1,0 @@
-read runFileName
-export runFileName
