@@ -1,0 +1,4 @@
+
+Exception: java.lang.ArithmeticException: / by zero
+
+Exception: java.util.InputMismatchException

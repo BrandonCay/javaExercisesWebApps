@@ -1,0 +1,1 @@
+Type and execute program E2 with input values:             7 and 0, then 10 and kd, and finally 12 and 5.
