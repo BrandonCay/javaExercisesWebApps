@@ -1,0 +1,2 @@
+read runFileName
+export runFileName
