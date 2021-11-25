@@ -1,0 +1,5 @@
+The following program can be executed in one of the following ways:
+1. With a command line argument that is the name of a text file with the following
+content: A B C D E F
+2. Without a command line argument. But the input values A B C D E F are
+entered at the keyboard.
