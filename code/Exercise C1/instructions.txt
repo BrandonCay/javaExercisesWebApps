@@ -1,0 +1,8 @@
+Exercise C1
+Write a program that consists of the class named ExerciseC1 with the method main that does the following:
+Create an ArrayList of Integers with an initial capacity of 10 named listOfValues.
+Read ten integer values and add them into listOfValues:  one of those values must be 50
+Output the values in listOfValues by using an enhanced for loop
+Insert the value 100 into listOfValues at index 5
+Remove from the list the value 50
+Output the values in listOfValues by using an Iterator or ListIterator object
