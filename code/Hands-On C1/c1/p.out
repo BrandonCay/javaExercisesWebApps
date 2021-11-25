@@ -1,0 +1,7 @@
+Display list contents with counter-controlled loop: yellow red
+Display list contents with enhanced for statement: yellow red
+List with two new elements: yellow red green yellow
+Remove first instance of yellow: red green yellow
+Remove second list element (green): red yellow
+"red" is in the list
+Size: 2

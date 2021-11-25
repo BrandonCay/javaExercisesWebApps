@@ -1,0 +1,6 @@
+
+Original contents of alist: C A E B D F 
+
+Modified contents of alist: C- A- E- B- D- F- 
+
+Modified list backwards: F- D- B- E- A- C- 

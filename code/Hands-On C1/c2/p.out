@@ -1,0 +1,10 @@
+ArrayList: 
+MAGENTA
+ RED
+ WHITE
+ BLUE
+ CYAN
+ 
+
+ArrayList after calling removeColors: 
+MAGENTA CYAN 
