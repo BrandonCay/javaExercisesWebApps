@@ -1,15 +1,3 @@
-2
-13
-24
-35
-46
-3.5
-13.6
-24.7
-35.8
-46.9
-John
-Mark
-Peter
-Ann
-Vicky
+7
+10.5
+John Doe
