@@ -1,0 +1,8 @@
+Write a program that consists of the class named ExerciseC2 with the method main that does the following:
+Create an HashMap with a String key and an Integer value with an initial capacity of 16 named mapC2.
+Read ten pairs of names and integer values and add them into mapC2
+Read a name and output its corresponding value.
+Output the list of the key-value pairs by using an enhanced for-loop on the set of keys
+Output the list of the key-value pairs by using an Iterator object on the set of keys
+ Remove from the map all the pairs with an even value
+Output the list of the key-value pairs by using an Iterator object on the set of keys.
