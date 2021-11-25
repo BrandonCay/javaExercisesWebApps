@@ -1,0 +1,9 @@
+The following program
+• receives the name of a file as a command line argument and does the
+following:
+1. Print the name of the file.
+2. Print the pathname of the file
+3. Print either true/false depending on whether you can write into the file
+4. Print either true/false depending on whether the file is a directory
+5. Print the number of byte (length) of the file
+6. Print the pathname of the directory that contains this file.
