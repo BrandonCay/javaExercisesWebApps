@@ -13,7 +13,7 @@ public class TestFilterIO3 {
         int arraySz = 1;
         try {
             /*--- Create a byte-based output stream for the file: fio3.data---*/
-            FileOutputStream foutput = new FileOutputStream("fio3.data");
+            FileOutputStream foutput = new FileOutputStream(makeFileName(".data"));
             /* connect a DataOutputStream filter to this stream */
             DataOutputStream doutput = new DataOutputStream(foutput);
             /* write the elements of the arrays into this file */
@@ -26,11 +26,11 @@ public class TestFilterIO3 {
             doutput.close();
             foutput.close();
             /* Create a byte-based input stream for the file: fio3.data--- */
-            FileInputStream finput = new FileInputStream("fio3.data");
+            FileInputStream finput = new FileInputStream( makeFileName(".data"));
             /* connect a DataInputputStream filter to this tream */
             DataInputStream dinput = new DataInputStream(finput);
             /*- Create an output stream for the file: fio3.txt-*/
-            FileOutputStream newfoutput = new FileOutputStream("fio3.txt");
+            FileOutputStream newfoutput = new FileOutputStream(makeFileName(".txt"));
             /*- connect a PrintStream filter to this stream--*/
             PrintStream poutput = new PrintStream(newfoutput);
             /*------read the content of the binary file fio3.data and
@@ -55,5 +55,9 @@ public class TestFilterIO3 {
         } catch (IOException ioe) {
             System.err.println("I/O error - " + ioe);
         }
+    }
+    private static String makeFileName(String extension){
+        String fileName="efio2" ;
+        return fileName + extension;
     }
 }
