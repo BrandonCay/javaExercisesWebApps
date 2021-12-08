@@ -76,7 +76,7 @@ public class ExerciseC2 {
          /* Output the list of the key-value
          * pairs by using an Iterator object on the set of keys.
          */
-iterator = mapC2.keySet().iterator( );
+        iterator = mapC2.keySet().iterator( );
 
         while(iterator.hasNext()){
             String key = iterator.next();
