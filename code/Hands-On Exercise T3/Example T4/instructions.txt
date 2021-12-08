@@ -1,0 +1,3 @@
+The application in this example consits of a class file as follows:
+The main thread creates another thread (which goes to sleep for 5 seconds) and then 
+waits for it to terminate before it can continue

@@ -1,0 +1,6 @@
+1. Type and execute the programs in examples T3 and T4.
+2. Type and execute the programs in examples T5 first with method-level 
+synchronization and second without it.
+3. Type and execute the programs in examples T6 first with block-level synchronization 
+and second without it.
+4. Type and execute the programs in example T7

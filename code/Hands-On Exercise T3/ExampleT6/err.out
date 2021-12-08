@@ -1,0 +1,9 @@
+In this example, 
+• the method main does the following:
+1. Create an instance the PipedOutputStream class
+2. Create an instance the PipedInputStream class and connect it to the instance of the 
+PipedOutputStream class created in the step 1.
+3. Create aThread and pass to it as argument the instance of the PipedOutputStream
+created in step 1
+• a writer thread is created that write to a pipe and
+o the mehod main reads from a pipe that is connected to the writer thread’s pipe.

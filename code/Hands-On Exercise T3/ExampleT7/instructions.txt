@@ -1,0 +1,26 @@
+Example T6
+The application in this example consists of one Java class file with the following:
+The class SynchBlock
+o that implements the Runnable interface with the code that is used by three 
+threads to concurrently access the instance variables
+− StringBuffer buffer and 
+− int counter
+(whose access should be synchronized) on an object.
+o Each thread 
+− creates a message that includes the current value of the instance variable 
+counter, 
+− waits one tenth of a second, and then
+− append the message to the buffer and then 
+− adds one to the current value of the instance variable counter.
+This file also contain the code of the main thread that 
+o creates, 
+o starts, and 
+o waits for all three threads to terminate.
+Note
+1.The class StringBuffer is a Java class that is provided to represent strings. It also has 
+methods to perform the basic operations on strings
+2.The static method void getProperty( String key ) of the class System 
+a. Takes as a parameter the name of a system propert (key), and 
+b. returns the string value of the system property.
+c. When the key is “line.separator" , 
+it returns the string “\n” in UNIX and “\r\n” in MS Windows systems.

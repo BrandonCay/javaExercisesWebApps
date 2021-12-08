@@ -1,0 +1,1 @@
+This project uses shell files for execution and processing. Any files renamed with 'sub#' appended at the end was for submitting duplicate file names onto BB. I cannot upload shell scripts to BB. Contact owner for github link
