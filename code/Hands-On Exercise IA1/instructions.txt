@@ -1,0 +1,21 @@
+1. Type and execute the program LocalHostDemo.
+2. Modify the program LocalHostDemo so that it determines and displays the IP 
+address in byte format as follows: 
+A[0] A[1] A[2] A[3]. For example: 127 45 9 2.
+Note that a byte value is represented in binary two’s complement: a positive value (00 
+– 7F is represented by its binary representations whereas a negative value V (80 – FF) 
+is the binary representation of 256 – V.
+
+--desc--
+1. Type and execute the program LocalHostDemo.
+2. Modify the program LocalHostDemo so that it determines and displays the IP 
+address in byte format as follows: 
+A[0] A[1] A[2] A[3]. For example: 127 45 9 2.
+Note that a byte value is represented in binary two’s complement: a positive value (00 
+– 7F is represented by its binary representations whereas a negative value V (80 – FF) 
+is the binary representation of 256 – V.
+
+
+The following program finds out the IP address in dotted decimal notation 
+of the computer on which it is executed. 
+• You run it by typing the command: java LocalHostDem
